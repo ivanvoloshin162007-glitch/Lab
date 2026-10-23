@@ -31,6 +31,9 @@ namespace CatAndMouse
                     Console.WriteLine();
                 }
             }
+            
+            bool ok = GameTests.RunAll();
+            Environment.ExitCode = ok ? 0 : 1;
         }
     }
 }
