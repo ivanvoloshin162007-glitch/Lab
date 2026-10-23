@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>CatAndMouse</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Data\**\*.txt" CopyToOutputDirectory="PreserveNewest" LinkBase="Data" />
+  </ItemGroup>
+
+</Project>
